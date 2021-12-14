@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DisplayRandomReferenceFragmentView">
+
+    <TextView
+        android:id="@+id/display_random_reference_anime_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/anime_string"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/display_random_reference_anime_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/display_random_reference_anime_name_textview"
+        app:layout_constraintStart_toEndOf="@id/display_random_reference_anime_name_textview"
+        tools:text="Random Anime Name" />
+
+    <TextView
+        android:id="@+id/display_random_reference_character_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="@string/character_string"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/display_random_reference_anime_name_textview"
+        app:layout_constraintTop_toBottomOf="@id/display_random_reference_anime_name_textview" />
+
+    <TextView
+        android:id="@+id/display_random_reference_character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/display_random_reference_character_name_textview"
+        app:layout_constraintStart_toEndOf="@id/display_random_reference_character_name_textview"
+        tools:text="Random Character Name" />
+
+    <TextView
+        android:id="@+id/display_random_reference_quote_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="@string/quote_string"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/display_random_reference_character_name_textview"
+        app:layout_constraintTop_toBottomOf="@id/display_random_reference_character_name_textview" />
+
+    <TextView
+        android:id="@+id/display_random_reference_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/display_random_reference_quote_textview"
+        app:layout_constraintStart_toEndOf="@id/display_random_reference_quote_textview"
+        tools:text="Random Quote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
