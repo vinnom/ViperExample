@@ -11,7 +11,11 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        if (savedInstanceState == null){
+        displayGetRandomReferenceView(savedInstanceState)
+    }
+
+    private fun displayGetRandomReferenceView(savedInstanceState: Bundle?) {
+        if (savedInstanceState == null) {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.apply {
                 setReorderingAllowed(true)
