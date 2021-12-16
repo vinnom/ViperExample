@@ -10,10 +10,6 @@ import br.com.vinnom.viperexample.presenter.GetRandomReferencePresenter
 
 class GetRandomReferenceFragmentView : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -24,7 +20,7 @@ class GetRandomReferenceFragmentView : Fragment() {
 
         val getRandomReferenceButton = binding.getRandomReferenceButton
         getRandomReferenceButton.setOnClickListener {
-            GetRandomReferencePresenter().getRandomReferenceButtonClicked()
+            GetRandomReferencePresenter(this).getRandomReferenceButtonClicked()
         }
 
         return view

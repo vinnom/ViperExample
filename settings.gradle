@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "ViperExample"
 include ':app'
 include ':domain'
+include ':interactor'

@@ -4,12 +4,23 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 dependencies {
 
-    implementation project(':webapi')
     implementation project(':domain')
+
+    // retrofit
+    def retrofit = '2.9.0'
+    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: "$retrofit"
+    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: "$retrofit"
+
+    // okhttp
+    def okhttp = '4.9.3'
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: "$okhttp"
+    implementation group: 'com.squareup.okhttp3', name: 'logging-interceptor', version: "$okhttp"
+
+
 }

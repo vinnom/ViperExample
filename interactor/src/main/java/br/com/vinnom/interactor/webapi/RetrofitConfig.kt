@@ -1,6 +1,6 @@
-package br.com.vinnom.webapi
+package br.com.vinnom.interactor.webapi
 
-import br.com.vinnom.webapi.service.RandomReferenceService
+import br.com.vinnom.interactor.webapi.service.RandomReferenceService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

@@ -1,3 +1,7 @@
 package br.com.vinnom.domain.entity
 
-data class AnimeReferenceEntity(var animeName: String, var characterName: String, var quote: String)
+data class AnimeReferenceEntity(
+    val animeName: String,
+    val characterName: String,
+    val quote: String
+)
