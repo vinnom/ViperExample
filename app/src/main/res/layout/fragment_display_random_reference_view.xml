@@ -52,6 +52,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@id/display_random_reference_character_name_textview"
         app:layout_constraintStart_toEndOf="@id/display_random_reference_character_name_textview"
+        app:layout_constraintTop_toBottomOf="@id/display_random_reference_anime_name"
         tools:text="Random Character Name" />
 
     <TextView
@@ -68,13 +69,17 @@
 
     <TextView
         android:id="@+id/display_random_reference_quote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="10dp"
         android:paddingBottom="10dp"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@id/display_random_reference_quote_textview"
+        android:layout_marginEnd="10dp"
         app:layout_constraintStart_toEndOf="@id/display_random_reference_quote_textview"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display_random_reference_character_name"
         tools:text="Random Quote" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

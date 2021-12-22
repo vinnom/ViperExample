@@ -6,9 +6,11 @@ import br.com.vinnom.viperexample.databinding.ActivityMainBinding
 import br.com.vinnom.viperexample.view.GetRandomReferenceFragmentView
 
 class MainActivity : AppCompatActivity() {
+
+    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         displayGetRandomReferenceView(savedInstanceState)
@@ -18,8 +20,8 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.apply {
+                add(binding.fragmentContainerView.id, GetRandomReferenceFragmentView())
                 setReorderingAllowed(true)
-                add(R.id.fragment_container_view, GetRandomReferenceFragmentView())
             }
             transaction.commit()
         }
